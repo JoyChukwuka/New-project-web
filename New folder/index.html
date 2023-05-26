@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in different corners</p>
+    <div class="container">
+        <img src="img_5terre_wide.jpg" alt="city">
+        <div class="topleft" id="topleft">Top Left </div>
+        <button onclick="myTop1()">Top Left >></button>
+        <div class="topright" id="topright">Top right</div>
+        <button onclick="myTop2()">Top Right >></button>
+        <div class="bottomleft" id="bottomleft">Bottom left</div>
+        <button onclick="myTop3()">Bottom Left >></button>
+        <div class="bottomright" id="bottomright">Bottom right</div>
+        <button onclick="myTop4()">Bottom Right >></button>
+        <div class="centered" id="centered">Centered</div>
+        <button onclick="myTop5()">Centered >></button>
+    </div>
+
+<script>
+    function myTop1()
+    {
+        document.getElementById("topleft").style.color = "red";
+    }
+    function myTop2(){
+        document.getElementById("topright").style.color = "blue";
+    }
+    function myTop3(){
+        document.getElementById("bottomleft").style.color = "pink";
+    }
+    function myTop4(){
+        document.getElementById("bottomright").style.color = "brown";
+    }
+    function myTop5(){
+        document.getElementById("centered").style.color = "orange";
+    }
+</script>
+</body>
+</html>
